@@ -1,25 +1,28 @@
-import { NavDropdown } from "react-bootstrap"
+import {NavBar, NavDropdown } from "react-bootstrap"
 
 export const NavBar = () => {
     return(
-        <NavBar  bg="light" expand="lg">
+        <NavBar  expand="lg">
         <Container >
-        <NavBar.Brand href="#home">React-Bootstrap</NavBar.Brand>
-        <NavBar.Toggle aria-controls="basic-navbar-nav" />
+        <NavBar.Brand href="#home">
+            <img src={""} alt="Logo" />
+        </NavBar.Brand>
+        <NavBar.Toggle aria-controls="basic-navbar-nav" >
+            <span classname="navbar-toggeler-icon"></span>
+        </NavBar.Toggle>
         <NavBar.Collapse id="basic-navbar-nav" >
         <Nav className="me-auto">
         <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#link">Link</Nav.Link>
-        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        <NavbarDropdown.Item href="#action/3.1">Action</NavbarDropdown.Item>
-        <NavbarDropdown.Item href="#action/3.2">Another action</NavbarDropdown.Item>
-        <NavbarDropdown.Item href="#action/3.3">somthing</NavbarDropdown.Item>
-        <NavDropdown.Divider />
-        <NavbarDropdown.Item href="#action/3.4">Separate link</NavbarDropdown.Item>
-
-        
-        </NavDropdown>
+        <Nav.Link href="#skills">Skills</Nav.Link>
+        <Nav.Link href="#projects">Projects</Nav.Link>
+    
+    
         </Nav>
+        <span className="navbar-text">
+            <div className="navbar-icon">
+                <a href="#"><img src{} alt=""/></a>
+            </div>
+        </span>
         </NavBar.Collapse>
         </Container>
         </NavBar>
