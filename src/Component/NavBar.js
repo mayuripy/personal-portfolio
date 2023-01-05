@@ -1,6 +1,11 @@
 import {usestate,useEffect} from "react"
 import {NavBar, Container } from "react-bootstrap"
-import logo from "../assets"
+import logo from "../assets/img/logo.svg"
+import navIcon1 from "../assets/img/nav-icon1.svg"
+import navIcon2 from "../assets/img/nav-icon2.svg"
+import navIcon3 from "../assets/img/nav-icon3.svg"
+
+
 
 export const NavBar = () => {
      const { activeLink, setactiveLink} = usestate("home");
@@ -19,8 +24,11 @@ export const NavBar = () => {
 
     
      }, []);
+     const onupdatActiveLink = () => {
+        setActiveLink(value);
+     }
    
-    return(
+    return
         <NavBar  expand="lg">
         <Container >
         <NavBar.Brand href="#home">
