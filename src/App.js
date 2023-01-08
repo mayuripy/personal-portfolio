@@ -1,7 +1,8 @@
-import logo from '../logo.png';
+//import loko from './logo.svg';
 import './App.css';
 
 import {NavBar} from "./Component/NavBar";
+import 'bootstrap/dist/css/bootstrap.min,css';
 
 function App() {
   return (

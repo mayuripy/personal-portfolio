@@ -1,6 +1,6 @@
 import {useState,useEffect} from "react"
-import {Navbar,Nav, Container ,setScrolled} from "react-bootstrap";
- import logo from "./assets/img/logo.png"
+import {Navbar,Nav, Container} from "react-bootstrap";
+ import loko from "../assets/img/logo.svg"
 
 import navIcon2 from "../assets/img/navIcon2.png"
 import navIcon3 from "../assets/img/navIcon3.png"
@@ -20,7 +20,7 @@ export const NavBar = () => {
 
       }else{
         setScrolled(false)
-      }
+      }                                                                                                     
      }
 
      window.addEventListener("scroll",onScroll);
@@ -29,18 +29,16 @@ export const NavBar = () => {
 
     
       }, []);
-      const onupdatActiveLink = () => {
-         setActiveLink();
-     }
+      
      const onUpdateActiveLink =(value) => {
         setActiveLink(value);
      }
    
     return(
-        <Navbar  expand="lg">
+        <Navbar  expand="md" className={scrolled ? "scrolled" : ""}>
         <Container >
-        <Navbar.Brand href="#home">
-            <img src={logo} alt="logo" />
+        <Navbar.Brand >
+           <h3>LOgo</h3>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" >
             <span classname="navbar-toggeler-icon"></span>
