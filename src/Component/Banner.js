@@ -9,7 +9,8 @@ export const Banner = () => {
             <span className="tagline">Welcome to my portfolio</span>
             <h1>('Hi i'm sebdecoded')<span className="wrap">Web devlope</span></h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-             Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>`   `
+             Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+             <button onClick={() => console.log('connect')}>let's Connect <ArrowRightCircle size={25} /></button>
             </Col>
         </Row>
     </Container>
