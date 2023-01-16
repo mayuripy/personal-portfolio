@@ -1,5 +1,5 @@
-import { Container, Row } from "react-bootstrap"
-
+import { Col, Container, Row } from "react-bootstrap"
+import  { BsFillArrowRightCircleFill } from 'react-icons/bs'
 export const Banner = () => {
   return(
     <section className="banner" id="home">
@@ -10,10 +10,10 @@ export const Banner = () => {
             <h1>('Hi i'm sebdecoded')<span className="wrap">Web devloper</span></h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
              Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-             <button onClick={() => console.log('connect')}>let's Connect <ArrowRightCircle size={25} /></button>
+             <button onClick={() => console.log('connect')}>let's Connect <BsFillArrowRightCircleFill size={25} /></button>
             </Col>
             <Col  xs={12} md={6} xl={5}>
-              <img src={header-img} alt="header img" />
+              <img src={'/img/header-img.png'} alt="header img" />
             </Col>
         </Row>
     </Container>
