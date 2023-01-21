@@ -1,10 +1,9 @@
 import {useState,useEffect} from "react"
 import {Navbar,Nav, Container} from "react-bootstrap";
 
-
-import navIcon2 from "../assets/img/navIcon2.png"
-import navIcon3 from "../assets/img/navIcon3.png"
-import navIcon1 from "../assets/img/navIcon1.png"
+//import navicon2 from "../assets/img/navIcon2 copy.png"
+//import navicon3 from "../assets/img/navIcon3 copy.png"
+//import navicon1 from "../assets/img/navIcon1 copy.png"
 
 
 
@@ -38,7 +37,7 @@ export const NavBar = () => {
         <Navbar  expand="md" className={scrolled ? "scrolled" : ""}>
         <Container >
         <Navbar.Brand >
-           <h3>LOgo</h3>
+           <h1>LOGO</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" >
             <span classname="navbar-toggeler-icon"></span>
@@ -52,9 +51,9 @@ export const NavBar = () => {
         
         <span className="navbar-text">
             <div className="social-icon">
-                <a href="#"><img src={'/img/navIcon1.png'} alt=""/></a>
-                <a href="#"><img src={'/img/navIcon2.png'} alt=""/></a>
-                <a href="#"><img src={'/img/navIcon3.png'} alt=""/></a>
+                <a href="#"><img src={'/img/navIcon1 copy.png'} alt=""/></a>
+                <a href="#"><img src={'/img/navIcon2 copy.png'} alt=""/></a>
+                <a href="#"><img src={'/img/navIcon3 copy.png'} alt=""/></a>
                 
             </div>
             <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
